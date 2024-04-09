@@ -1,1 +1,1 @@
-# vendredisociety
+# vendredi society
