@@ -1,0 +1,31 @@
+[data-theme="green"] {
+  background-color: #002921;
+  color: #f7f7f7;
+}
+[data-theme="yellow"] {
+  background-color: #f0ff3d;
+  color: #002921;
+}
+[data-theme="white"] {
+  background-color: #f7f7f7;
+  color: #001713;
+}
+[data-theme="dark"] {
+  background-color: #001713;
+  color: #f7f7f7;
+}
+[data-theme="greenCard"] {
+  background-color: #003d31;
+  color: #f7f7f7;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  margin: -1px;
+}
+
+

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendredi Society</title>
+
+  <link href="./assets/img/favicon.png" rel="icon" sizes="256x256" type="image/png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <script src="./assets/js/split.min.js"></script>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+
+<body>
+  <div class="wapper">
+    <header class="header">
+      <h1 class="logo">
+        <span class="blind">Vendredi Society logo</span>
+        <a href="#">
+          <svg width="60" height="35" viewBox="0 0 60 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+            <path
+              d="M34.2895 8.67423V0C17.1428 0 17.1429 9.70706 0 9.70706V34.6154C13.6766 34.6154 16.4427 28.4378 25.7104 25.9412V34.6154C42.8571 34.6154 42.8571 24.9083 60 24.9083V0C46.3234 0 43.5573 6.17757 34.2895 8.67423Z"
+              fill="#F0FF3D"></path>
+          </svg>
+        </a>
+      </h1>
+      <button class="btn-menu" type="button">
+        <span>MENU</span>
+      </button>
+    </header>
+    <main class="main">
+      <section class="sc-brand">
+        <h2 class="blind">CRÉER DES MARQUES QUI PERCUTENT</h2>
+        <div class="inner">
+          <div data-theme="green" class="col-1">
+            <h3 class="logo-full">
+              <a href="">
+                <img src="./assets/img/logoFull.svg" alt>
+              </a>
+            </h3>
+            <div class="txt">
+              <div class="t-1">
+                CRÉER DES
+              </div>
+              <div class="t-2">
+                <span>MARQUES</span>
+                <span>
+                  <i class="ico-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
+                      <rect x="27.6309" width="6.26295" height="57.1034" fill="#003D31" />
+                      <rect x="35.4287" y="57.5713" width="6.26295" height="43.8406"
+                        transform="rotate(135 35.4287 57.5713)" fill="#003D31" />
+                      <rect x="31" y="62" width="6.26295" height="43.8406" transform="rotate(-135 31 62)"
+                        fill="#003D31" />
+                    </svg>
+                  </i>
+                </span>
+                <span>QUI</span>
+              </div>
+              <div class="t-3">PERCUTENT</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="img-box">
+              <figure class="img1">
+                <img src="./assets/img/hero_1.png" alt>
+              </figure>
+              <div class="img2">
+                <video autoplay loop playsinline muted>
+                  <source src="./assets/video/hero2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <figure class="img3">
+                <img src="./assets/img/st.jpg" alt>
+              </figure>
+            </div>
+            <div class="fixed-1">
+              <div class="txt">
+                <div class="t-1">
+                  CRÉER DES
+                </div>
+                <div class="t-2">
+                  <span>MARQUES</span>
+                  <span></span>
+                  <span>QUI</span>
+                </div>
+                <div class="t-3">PERCUTENT</div>
+              </div>
+            </div>
+            <div class="fixed-2">
+              <div class="txt">
+                <div class="t-1">
+                  CRÉER DES
+                </div>
+                <div class="t-2">
+                  <span>MARQUES</span>
+                  <span></span>
+                  <span>QUI</span>
+                </div>
+                <div class="t-3">PERCUTENT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-digital">
+        <div class="inner">
+          <div data-theme="green" class="fixed">
+            <div class="col">
+              <h2 class="desc">
+                Et des expériences digitales ultra-fluides, pour ceux qui aiment avoir un coup d'avance.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-garder">
+        <div data-theme="green" class="fixed">
+          <div class="inner">
+            <h2 class="txt">ET LE GARDER.</h2>
+            <div class="bg">
+              <svg class="ell" fill="none" height="424" viewBox="0 0 762 424" width="762"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m761.5 212c0 58.278-42.459 111.144-111.335 149.469-68.86 38.316-164.023 62.031-269.165 62.031s-200.305-23.715-269.165-62.031c-68.8763-38.325-111.335-91.191-111.335-149.469 0-58.279 42.4587-111.145 111.335-149.4702 68.86-38.3158 164.023-62.030288 269.165-62.030288s200.305 23.714488 269.165 62.030288c68.876 38.3252 111.335 91.1912 111.335 149.4702z"
+                  opacity=".2" stroke="#fff"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-intro">
+        <div data-theme="white" class="inner">
+          <h2 class="txt">
+            Dans un monde qui change chaque jour et qui n’attend pas, notre modèle vous permet d’être vif.
+          </h2>
+          <div class="flex-inner">
+            <div class="video">
+              <div class="view">
+                <button class="btn-play" type="button">
+                  <i class="ico-play">
+                    <svg class="a" fill="none" height="63" viewBox="0 0 63 63" width="63"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="m63 31.5c0 17.397-14.103 31.5-31.5 31.5s-31.5-14.103-31.5-31.5 14.103-31.5 31.5-31.5 31.5 14.103 31.5 31.5z"
+                        fill="#f0ff3d"></path>
+                      <path d="m26 39v-16l13 8z" fill="#002921"></path>
+                    </svg>
+                  </i>
+                </button>
+                <video>
+                  <source src="./assets/video/thumbnail.mp4" type="video/mp4">
+                </video>
+              </div>
+              <p class="desc">Play showreel</p>
+            </div>
+            <p class="desc">
+              VOTRE ÉQUIPE EST COMPOSÉE SUR MESURE, POUR AVOIR LE PLUS D’IMPACT. UNIQUEMENT AVEC DES TALENTS POINTUS.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section data-theme="dark" class="sc-push">
+        <div class="inner">
+          <h2>Les derniers projets<br> toujours faits main</h2>
+          <h3>{&nbsp;&nbsp;&nbsp;dans la main&nbsp;&nbsp;&nbsp;}</h3>
+          <div class="bg">
+            <figure class="line1"><img src="assets/img/ellipseHori.svg"></figure>
+            <figure class="line2"><img src="assets/img/ellipseHori.svg"></figure>
+            <figure class="line3"><img src="assets/img/ellipseHori.svg"></figure>
+          </div>
+          <button class="btn-pop-1">
+            <div class="box">
+              <div class="view">
+                <video muted autoplay loop playsinline>
+                  <source src="/assets/video/loop.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="letter">Wilbi</span>
+            </div>
+          </button>
+          <button class="btn-pop-2">
+            <div class="box">
+              <div class="view">
+                <video muted autoplay loop playsinline>
+                  <source src="/assets/video/loop_b.mp4" type="video/mp4">
+                </video>
+              </div>
+              <span class="letter">Otio</span>
+            </div>
+          </button>
+        </div>
+      </section>
+      <section class="sc-invert">
+        <div data-theme="white" class="top">
+          <h2 class="desc">Nous avons regardé le monde d’hier et changé un peu les règles du jeu.</h2>
+        </div>
+        <div class="bottom">
+          <div class="inner">
+            <!-- 움직임 -->
+            <div class="seq">
+              <figure class="image show"><img src="./assets/img/seq1/seq1.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq2.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq3.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq4.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq5.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq6.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq7.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq8.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq9.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq10.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq11.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq12.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq13.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq14.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq15.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq16.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq17.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq18.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq19.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq20.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq21.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq22.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq23.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq24.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq25.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq26.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq27.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq28.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq29.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq30.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq31.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq32.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq33.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq34.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq35.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq36.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq37.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq38.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq39.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq40.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq41.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq42.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq43.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq44.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq45.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq46.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq47.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq48.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq49.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq50.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq51.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq52.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq53.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq54.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq55.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq56.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq57.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq58.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq59.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq60.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq61.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq62.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq63.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq64.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq65.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq66.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq67.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq68.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq69.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq70.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq71.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq72.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq73.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq74.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq75.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq76.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq77.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq78.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq79.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq80.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq81.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq82.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq83.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq84.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq85.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq86.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq87.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq88.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq89.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq90.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq91.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq92.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq93.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq94.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq95.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq96.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq97.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq98.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq99.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq100.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq101.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq102.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq103.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq104.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq105.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq106.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq107.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq108.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq109.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq110.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq111.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq112.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq113.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq114.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq115.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq116.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq117.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq118.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq119.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq120.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq121.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq122.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq123.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq124.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq125.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq126.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq127.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq128.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq129.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq130.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq131.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq132.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq133.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq134.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq135.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq136.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq137.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq138.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq139.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq140.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq141.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq142.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq143.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq144.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq145.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq146.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq147.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq148.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq149.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq150.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq151.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq152.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq153.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq154.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq155.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq156.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq157.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq158.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq159.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq160.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq161.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq162.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq163.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq164.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq165.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq166.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq167.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq168.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq169.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq170.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq171.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq172.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq173.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq174.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq175.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq176.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq177.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq178.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq179.jpg" alt></figure>
+              <figure class="image"><img src="./assets/img/seq1/seq180.jpg" alt></figure>
+            </div>
+            <!-- 고정 -->
+            <div data-theme="yellow" class="fixed">
+              <div class="txt show">
+                <p class="sub">Nous sommes <br>tout petits.</p>
+                <strong class="tit">Et pourtant <br>sans limites.</strong>
+                <p class="desc">Quelques capitaines stratéges, gardiens d’une culture de la performance et véritables
+                  puristes de
+                  la roadmap.
+                  L’ultra-agilité, pour vous faire avancer très vite.</p>
+              </div>
+              <div class="txt">
+                <p class="sub">Votre équipe n'existe pas encore.</p>
+                <strong class="tit">Elle sera rassemblée spécialement pour vous, totalement sur mesure.</strong>
+                <p class="desc">C’est tout simplement la seule façon de pouvoir vous conseiller la meilleure stratégie.
+                  Oubliez les mauvaises surprises
+                  : dans votre équipe, uniquement des talents au top de leur spécialité.</p>
+              </div>
+              <div class="txt">
+                <p class="sub">Il n'y a pas d'adresse.</p>
+                <strong class="tit">Vous impressionner avec nos productions plutôt qu’avec nos bureaux.</strong>
+                <p class="desc">Chez Vendredi Society, chacun travaille là où il est vraiment bien. Résultat, ça roule
+                  comme sur des roulettes, dixit
+                  tous nos clients qui sont bien contents.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-theme="green" class="sc-attend">
+        <h2 class="blind">Attendez, il y a pire.</h2>
+        <div>
+          <div class="inner">
+            <div class="box">
+              <ul class="maquee">
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+              </ul>
+            </div>
+            <div class="box">
+              <ul class="maquee">
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+                <li>Attendez, <span class="serif">il y a pire.</span></li>
+              </ul>
+            </div>
+          </div>
+          <p class="desc">On travaille avec vous.</p>
+        </div>
+      </section>
+      <section data-theme="white" class="sc-desole">
+        <div class="inner">
+          <h2>Désolé, vous serez un peu impliqué.</h2>
+          <div class="box">
+            <svg class="arrow" fill="none" height="146" viewBox="0 0 6 146" width="6"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="m3.00001 145.266 2.88675-5h-5.773505zm-.50001-145.000375.00001 140.500375h1l-.00001-140.500375z"
+                fill="#002921"></path>
+            </svg>
+            <p class="desc">
+              Convaincus que pour aller là où vous voulez, vous avez aussi votre mot à dire, on vous met dans la boucle
+              dès le début. Si vous aimez donner votre avis, cela vous plaira.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="sc-free">
+        <div class="inner">
+          <h3>{&nbsp;&nbsp;&nbsp;Free frees&nbsp;&nbsp;&nbsp;}</h3>
+          <h2>Ici on respecte les <br>Freelances</h2>
+          <div class="fixed">
+            <div class="img-box">
+              <article class="seq2">
+                <figure class="img show"><img src="./assets/img/seq2/seq1.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq2.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq3.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq4.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq5.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq6.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq7.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq8.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq9.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq10.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq11.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq12.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq13.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq14.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq15.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq16.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq17.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq18.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq19.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq20.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq21.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq22.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq23.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq24.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq25.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq26.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq27.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq28.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq29.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq30.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq31.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq32.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq33.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq34.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq35.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq36.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq37.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq38.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq39.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq40.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq41.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq42.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq43.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq44.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq45.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq46.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq47.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq48.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq49.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq50.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq51.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq52.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq53.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq54.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq55.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq56.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq57.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq58.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq59.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq60.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq61.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq62.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq63.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq64.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq65.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq66.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq67.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq68.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq69.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq70.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq71.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq72.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq73.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq74.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq75.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq76.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq77.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq78.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq79.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq80.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq81.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq82.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq83.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq84.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq85.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq86.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq87.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq88.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq89.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq90.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq91.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq92.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq93.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq94.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq95.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq96.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq97.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq98.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq99.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq100.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq101.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq102.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq103.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq104.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq105.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq106.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq107.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq108.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq109.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq110.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq111.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq112.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq113.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq114.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq115.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq116.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq117.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq118.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq119.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq120.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq121.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq122.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq123.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq124.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq125.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq126.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq127.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq128.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq129.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq130.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq131.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq132.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq133.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq134.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq135.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq136.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq137.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq138.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq139.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq140.jpg" alt></figure>
+                <figure class="img"><img src="./assets/img/seq2/seq141.jpg" alt></figure>
+              </article>
+            </div>
+          </div>
+          <div class="txt-box">
+            <p class="desc">C’est le minimum quand <br>on veut pouvoir travailler <br>avec les meilleurs</p>
+          </div>
+          <div class="txt-moving">
+            <div class="box">
+              <p class="desc">Et c’est tant mieux.</p>
+              <span class="underline"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sc-person">
+        <h2 class="blind">Carac</h2>
+        <div data-theme="white" class="inner">
+          <div class="txt">
+            <strong class="small">{&nbsp;&nbsp;&nbsp;Zéro mise en concurrence&nbsp;&nbsp;&nbsp;}</strong>
+            <p class="big">On choisit le bon, ça va plus vite.</p>
+          </div>
+          <div class="txt">
+            <strong class="small">{&nbsp;&nbsp;&nbsp;Projets sains&nbsp;&nbsp;&nbsp;}</strong>
+            <p class="big">Des plannings honnêtes que l'on tient.</p>
+          </div>
+          <div class="txt">
+            <strong class="small">{&nbsp;&nbsp;&nbsp;Spécialités respectées&nbsp;&nbsp;&nbsp;}</strong>
+            <p class="big">Experts et talents pointus, et basta.</p>
+          </div>
+        </div>
+      </section>
+      <section data-theme="dark" class="sc-job">
+        <div class="inner">
+          <div class="row">
+            <ul class="card-list">
+              <li data-theme="greenCard" class="card-item">
+                <div class="top">
+                  <strong class="name">Nicolas Garcia</strong>
+                  <span class="job">Paack</span>
+                </div>
+                <p class="desc">Respectueux, accompagnant et professionnel, voilà quelques-uns des adjectifs choisis si
+                  je devais définir Vendredi
+                  Society suite à notre dernière collaboration. À l’écoute dès le début et fonctionnant main dans la
+                  main pour délivrer un
+                  projet dans les temps et surtout très cool.</p>
+              </li>
+              <li data-theme="yellow" class="card-item">
+                <div class="top">
+                  <strong class="name">Julie Barthélemy</strong>
+                  <span class="job">White elephant</span>
+                </div>
+                <p class="desc">On sent tout de suite quand on arrive dans une équipe avec qui on va pouvoir faire de
+                  belles choses, qui auront l’impact
+                  qu’on voulait au départ. Avec Vendredi Society, c’est l’exigence, le respect des expertises de chacun
+                  et des notifs
+                  Slack qu’on est content de voir, pas l’inverse. Bref, une relation hyper saine et motivante à tous
+                  points de vue.</p>
+              </li>
+              <li data-theme="greenCard" class="card-item">
+                <div class="top">
+                  <strong class="name">François Cauderlier</strong>
+                  <span class="job">Cowbell Studio</span>
+                </div>
+                <p class="desc">J’ai eu la chance de travailler avec Vendredi Society sur deux projets de motion design
+                  et je suis très satisfait du
+                  contact suscité, j’ai tout de suite été mis à l’aise par l’équipe. Une confiance mutuelle s’est vite
+                  crée, dans une
+                  ambiance de travail à la fois professionnelle et chaleureuse, tout en respectant les plannings et
+                  obligations de chacun.</p>
+              </li>
+              <li data-theme="white" class="card-item">
+                <div class="top">
+                  <strong class="name">Christophe Zidler</strong>
+                  <span class="job">CZ</span>
+                </div>
+                <p class="desc">Avec Vendredi on est sur de travailler dans un environnement sain, sans stress, et on
+                  sent qu'ils respectent
+                  profondément les freelances avec qui ils travaillent en leur faisant entièrement confiance. Pas de
+                  bullshit ou de
+                  réunions inutiles, c'est carré du brief initial au rendu final. La cerise sur le gâteau : ils sont
+                  encore là au moment
+                  de la facture. Avec eux, on peut oublier les 30 emails de relance habituels, ça fait plaisir.</p>
+              </li>
+              <li data-theme="yellow" class="card-item">
+                <div class="top">
+                  <strong class="name">Alexandre Parageaud</strong>
+                  <span class="job">Apara</span>
+                </div>
+                <p class="desc">Avec Vendredi Society, on collabore dans un cadre qui respecte le freelance parce qu’on
+                  lui fait confiance et qu’on lui
+                  laisse la liberté de rester créatif. Au final, tout le monde est satisfait du projet puisque le
+                  travail est réalisé de
+                  la bonne façon et dans les meilleurs conditions possibles</p>
+              </li>
+              <li data-theme="greenCard" class="card-item">
+                <div class="top">
+                  <strong class="name">Nicolas Guillard</strong>
+                  <span class="job">Nitrique Concept</span>
+                </div>
+                <p class="desc">Travailler avec Vendredi Society est un vrai plaisir, les demandes des clients sont
+                  analysées, challengées et clarifiées
+                  par l’équipe UX et nous arrivent ensuite cadrées afin de limiter les inconnues. On modifie très peu ce
+                  que l’on fait ce
+                  qui est très rare dans notre métier, l’ensemble de l’équipe s’y retrouve ainsi que le client. Le
+                  savoir-faire de chacun
+                  est pris en compte et chaque profil est associé au bon projet.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h2 class="tit">Pour bien débuter, vérifions qu’on est fait pour s’entendre ?</h2>
+            <div class="flex">
+              <div class="question">
+                <button class="btn-q active" type="button">Pour qui travaillez vous, juste des start-ups ?</button>
+                <button class="btn-q" type="button">Comment démarrer un projet ensemble ?</button>
+                <button class="btn-q" type="button">Combien coûtent généralement les projets ?</button>
+                <button class="btn-q" type="button">De quelles informations avez-vous besoin pour préparer un devis
+                  ?</button>
+                <button class="btn-q" type="button">Mon équipe interne peut-elle collaborer avec Vendredi Society
+                  ?</button>
+              </div>
+              <div class="answer">
+                <div class="txt-a show">
+                  <p>Pour tous ceux qui font de belles choses ! Nous nous créons des marques et des expériences
+                    digitales dans tous les
+                    secteurs, pourvu qu'on soit à l'aise éthiquement avec le projet. Nous sommes convaincus que cette
+                    approche
+                    plurisectorielle, avec différentes typologies d'acteurs (grand groupe, startup, PME, ETI...),
+                    enrichit les réflexes et
+                    les approches, et affute la pertinence.</p>
+                </div>
+                <div class="txt-a">
+                  <p>Chaque projet est sur-mesure, jusqu'à l'équipe qui sera mobilisée. Il y aura quatre étapes pour
+                    lancer les choses :</p>
+                  <ul>
+                    <li>1 — Vous nous partagez votre projet et nous définissons votre besoin lors d’un premier échange.
+                    </li>
+                    <li>2 — Vendredi Society analyse la demande et rassemble les talents préssentis pour votre équipe
+                      projet.</li>
+                    <li>3 — Toute l’équipe réalise une roadmap, estime les coûts et vous présente son approche et sa
+                      stratégie.</li>
+                    <li>4 — Convaincus ? Go. Nous concrétisons notre collaboration lors d’un premier kickoff !</li>
+                  </ul>
+                </div>
+                <div class="txt-a">
+                  <p>L'échelle de coût des projets que nous gérons est très large car la nature des productions varie
+                    énormément, tout comme
+                    les secteurs dans lesquels ils s'inscrivent, et donc la stratégie qui en découle. On raisonne en
+                    termes de ROI pour
+                    vous, c'est la constante pour vous faire nos recos pour développer un projet qui soit performant et
+                    à la hauteur de vos
+                    ambitions, mais aussi qui dure dans le temps. Sinon, en pratique, entre forfait, régie et TMA, nous
+                    adaptons le mode de
+                    facturation à chaque projet.</p>
+                </div>
+                <div class="txt-a">
+                  <p>On vous propose déjà un premier échange téléphonique. Si le périmètre n’est pas assez précis, nous
+                    pourrons vous
+                    proposer des ateliers de cadrage pour vous accompagner dans la définition de votre projet à un
+                    niveau global et
+                    technique.</p>
+                  <p>Ces ateliers nous permettront de définir un périmètre précis auquel notre équipe projet pourra
+                    ensuite répondre à
+                    travers une proposition détaillée et un nouveau budget. Comme avec un architecte, il s'agit à la
+                    fois de s'inscrire dans
+                    une fourchette qui correspond à la dépense que vous pouvez allouer au projet et de vous proposer la
+                    solution la plus
+                    pertinente qui elle seule permet un chiffrage précis (selon le nombre de pièces, les matériaux,
+                    etc). Il y a donc
+                    plusieurs temps dans l'estimation, et toujours une logique du plus haut rendement pour vous.</p>
+                </div>
+                <div class="txt-a">
+                  <p>C'est simple, on vous met dans la boucle dès le début... après s'être assurés que ça a du sens pour
+                    tout le monde !
+                    Après des échanges validant les capacités de collaboration entre vos équipes internes et Vendredi
+                    Society, nous vous
+                    proposerons une méthodologie qui s'adapte aux objectifs de votre projet et aux compétences de votre
+                    équipe interne.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="inner">
+        <p class="txt">Ça se passe par ici</p>
+        <div class="img-box">
+          <span class="arrow-down">
+            <svg fill="none" height="192" viewBox="0 0 6 192" width="6" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="m3.00001 191.709 2.1795-3.775h-4.358999zm-.37751-191.000016.00001 187.602016h.755l-.00001-187.602016z"
+                fill="#001713"></path>
+            </svg>
+          </span>
+          <span class="circle">
+            <svg width="214" height="130" viewBox="0 0 214 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="circle"
+                d="M171 65.209C171 100.831 142.122 129.709 106.5 129.709C70.8776 129.709 42 100.831 42 65.209C42 29.5866 70.8776 0.708984 106.5 0.708984C142.122 0.708984 171 29.5866 171 65.209Z"
+                fill="#F0FF3D"></path>
+              <path id="logo"
+                d="M122.299 34.8224V4C61.1428 4 61.1429 38.4924 0 38.4924V127C48.7798 127 58.6455 105.049 91.7005 96.1776V127C152.857 127 152.857 92.5076 214 92.5076V4C165.22 4 155.354 25.951 122.299 34.8224Z"
+                fill="#F0FF3D"></path>
+            </svg>
+          </span>
+        </div>
+        <p class="huge">
+          <span class="letter3">B</span>
+          <span class="letter2">r</span>
+          <span class="letter1">i</span>
+          <span class="">e</span>
+          <span class="letter2">f</span>
+          <span class="letter3">e</span>
+          <span class="letter1">z</span>
+          <span>-</span>
+          <span class="letter1">n</span>
+          <span class="letter3">o</span>
+          <span>u</span>
+          <span class="letter1">s</span>
+        </p>
+        <div class="address">
+          <address class="flex">
+            <div class="sns">
+              <a href="" target="_blank"><img src="./assets/img/twitter.svg" class="ico-twitter"></img></a>
+              <a href="" target="_blank"><img src="./assets/img/instagram.svg" class="ico-insta"></img></a>
+              <a href="" target="_blank"><img src="./assets/img/linkedin.svg" class="ico-linked"></img></a>
+              <a href="" target="_blank"><img src="./assets/img/facebook.svg" class="ico-face"></img></a>
+            </div>
+            <a href="mailto:hello@vendredi-society.fr">
+              hello@vendredi-society.fr
+            </a>
+            <a href="tel:+33 (0)6 68 70 73 72">
+              +33 (0)6 68 70 73 72
+            </a>
+          </address>
+          <button class="btn-top">
+            Back to top
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

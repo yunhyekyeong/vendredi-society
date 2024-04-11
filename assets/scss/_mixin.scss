@@ -1,0 +1,40 @@
+@mixin soraL {
+  font-size: clamp(80px, 10vw, 180px);
+  font-weight: 500;
+  line-height: 1;
+}
+@mixin soraM {
+  font-size: clamp(32px, 4vw, 80px);
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+}
+@mixin soraS {
+  font-size: clamp(7px,.9vw,16px);
+  line-height: 1;
+}
+@mixin cormoH {
+  font-family: 'Cormorant Infant', serif;
+  font-size: clamp(79px, 10.2vw, 197px);
+}
+@mixin cormoL {
+  font-family: 'Cormorant Infant', serif;
+  font-size: clamp(59px, 7.6vw, 146px); 
+  font-weight: 300;
+  line-height: 1.14;
+}
+@mixin cormoMM {
+  font-family: 'Cormorant Infant', serif;
+  font-size: clamp(40px, 4.9vw, 93px);
+  font-weight: 300;
+  line-height: 1.03;
+  letter-spacing: -0.01em;
+}
+@mixin cormoM {
+  font-family: 'Cormorant Infant', serif;
+  font-size: clamp(23px, 2vw, 40px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
