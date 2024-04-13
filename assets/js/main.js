@@ -76,6 +76,10 @@ brandTxtTl
 
 
 
+const digitalTxt = new SplitType(".sc-digital .desc", {
+  types: "words, chars",
+});
+
 const digitalTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".sc-digital .fixed",
@@ -89,9 +93,11 @@ const digitalTl = gsap.timeline({
     },
     onLeave: function () {
       document.querySelector(".header .logo").classList.remove("invert");
+      document.querySelector(".sc-brand .col-2").classList.add("out");
     },
     onEnterBack: function () {
       document.querySelector(".header .logo").classList.add("invert");
+      document.querySelector(".sc-brand .col-2").classList.remove("out");
     },
     onLeaveBack: function () {
       document.querySelector(".header .btn-menu").classList.add("invert");
@@ -101,23 +107,6 @@ const digitalTl = gsap.timeline({
 });
 digitalTl.to(".sc-digital .fixed", { x: 0 });
 
-ScrollTrigger.create({
-  trigger: ".sc-digital",
-  start: "0% 0%",
-  end: "50% 50%",
-  // markers: true,
-  ease: "none",
-  onLeave: function () {
-    document.querySelector(".sc-brand .col-2").classList.add("out");
-  },
-  onEnterBack: function () {
-    document.querySelector(".sc-brand .col-2").classList.remove("out");
-  },
-});
-
-const digitalTxt = new SplitType(".sc-digital .desc", {
-  types: "words, chars",
-});
 const digitalTxtTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".sc-digital .fixed",
@@ -128,10 +117,7 @@ const digitalTxtTl = gsap.timeline({
   },
   ease: "none",
 });
-digitalTxtTl.to(".sc-digital .desc .char", {
-  opacity: 1,
-  stagger: 0.2,
-});
+digitalTxtTl.to(".sc-digital .desc .char", { opacity: 1, stagger: 0.2 });
 
 
 
@@ -141,8 +127,8 @@ const garderTxt = new SplitType(".sc-garder .txt", {
   types: "chars",
 });
 document.querySelectorAll(".sc-garder .txt .char").forEach((item, index) => {
-  const windowX = window.innerWidth * 2;
-  const translateX = index < 5 ? windowX * (index + 1) : windowX * (index + 2);
+  const windowX = window.innerWidth;
+  const translateX = windowX * (index + 1);
   const rotate = 25 * (index + 1);
   gsap.set(item, {
     x: `${translateX}`,
@@ -161,7 +147,7 @@ const garderTl = gsap.timeline({
 });
 garderTl
   .from(".sc-garder .bg", { yPercent: -70, rotation: 40, duration:.5 }, "a")
-  .to(".sc-garder .txt .char", { x: 0, rotation: 0, stagger: 0.3 }, "a")
+  .to(".sc-garder .txt .char", { x: 0, rotation: 0, stagger: 0.01 }, "a")
 ;
 const garderTxtTl = gsap.timeline({
   scrollTrigger: {
@@ -185,6 +171,11 @@ garderTxtTl
 
 
 
+
+const introTxt = new SplitType(".sc-intro .txt", {
+  types: "lines, words",
+});
+
 ScrollTrigger.create({
   trigger: ".sc-intro",
   start: "-50% 0%",
@@ -201,11 +192,6 @@ ScrollTrigger.create({
   },
 });
 
-
-
-const introTxt = new SplitType(".sc-intro .txt", {
-  types: "lines, words",
-});
 const introTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".sc-intro",
@@ -216,10 +202,7 @@ const introTl = gsap.timeline({
   },
   ease: "none",
 });
-introTl.from(
-  ".sc-intro .txt .word",
-  { yPercent: 100, stagger: 0.05 }
-);
+introTl.from(".sc-intro .txt .word",{ yPercent: 100, stagger: 0.05 });
 
 
 
@@ -227,6 +210,12 @@ introTl.from(
 
 
 
+const pushBtnTxt1 = new SplitType(".sc-push .btn-pop-1 .letter", {
+  types: "chars",
+});
+const pushBtnTxt2 = new SplitType(".sc-push .btn-pop-2 .letter", {
+  types: "chars",
+});
 
 ScrollTrigger.create({
   trigger: ".sc-push",
@@ -261,9 +250,6 @@ pushTl
   .to(".sc-push .bg .line3",{ xPercent: 10, yPercent: -180, rotation: 40 },"a"
 );
 
-const pushBtnTxt1 = new SplitType(".sc-push .btn-pop-1 .letter", {
-  types: "chars",
-});
 const pushBtnTl1 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sc-push .btn-pop-1",
@@ -284,9 +270,6 @@ document.querySelectorAll(".sc-push .btn-pop-1 .letter .char")
   })
 ;
 
-const pushBtnTxt2 = new SplitType(".sc-push .btn-pop-2 .letter", {
-  types: "chars",
-});
 const pushBtnTl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".sc-push .btn-pop-2",
