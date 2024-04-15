@@ -5,7 +5,7 @@ const lenis = new Lenis();
 lenis.on("scroll", ScrollTrigger.update);
 
 gsap.ticker.add((time) => {
-  lenis.raf(time * 600);
+  lenis.raf(time * 1000);
 });
 
 gsap.ticker.lagSmoothing(0);
@@ -522,13 +522,12 @@ freeTxtTl.to(
     rotation: 0,
     scaleY: 1,
     opacity: 1,
-    stagger: 0.5,
-    ease: "none",
+    stagger: 0.5
   },
   "a"
 );
 
-// 텍스트 언더라인
+//텍스트 언더라인
 const freeLineTl = gsap.timeline({
   scrollTrigger: {
     trigger: ".sc-free .txt-moving",
@@ -646,21 +645,19 @@ footerTl
 
 
 // scrollTop 이벤트
-const footerCircle = document.getElementById("circle").style.opacity;
-const footerLogo = document.getElementById("logo").style.opacity;
 
 document.querySelector(".btn-top").addEventListener("click", () => {
-  footerCircle = 0;
-  footerLogo = 1;
+  document.getElementById("circle").style.opacity = 0;
+  document.getElementById("logo").style.opacity = 1;
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 document.querySelector(".btn-top").addEventListener("mouseover", () => {
-  footerCircle = 0;
-  footerLogo = 1;
+  document.getElementById("circle").style.opacity = 0;
+  document.getElementById("logo").style.opacity = 1;
 });
 
 document.querySelector(".btn-top").addEventListener("mouseout", () => {
-  footerCircle = 1;
-  footerLogo = 0;
+  document.getElementById("circle").style.opacity = 1;
+  document.getElementById("logo").style.opacity = 0;
 });
