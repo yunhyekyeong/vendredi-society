@@ -131,7 +131,7 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
-  font-size: clamp(13px, 1.25vw, 24px);
+  font-size: 24px;
   font-weight: 500;
   pointer-events: initial;
   transition: 0.2s;
@@ -169,32 +169,6 @@ body {
   display: inline-block;
 }
 
-.gnb .menu-list a {
-  position: relative;
-  text-align: left;
-}
-.gnb .word1 .letter {
-  font-size: clamp(80px, 6.9444444444vw, 133.3333333333px);
-  line-height: 1.1;
-  margin-right: -6px;
-}
-.gnb .word2 {
-  position: absolute;
-  top: clamp(8px, 0.6944444444vw, 13.3333333333px);
-  left: 0;
-  transform: translateY(-20px);
-  font-family: "Orbikular Regular";
-  font-size: clamp(80px, 6.9444444444vw, 133.3333333333px);
-  font-style: italic;
-  line-height: 1.1;
-  color: #f0ff3d;
-}
-.gnb .word2 .letter {
-  opacity: 0;
-  transform: translateY(100%);
-  visibility: visible;
-}
-
 .header .logo.invert svg path {
   fill: #002921;
 }
@@ -221,16 +195,18 @@ body {
 
 .footer {
   position: relative;
+  display: block;
   background: #f7f7f7;
   overflow: hidden;
 }
 .footer .inner {
-  width: 96vw;
   margin: 0 auto;
-  padding: 130px 0 0;
+  padding: 100px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .footer .txt {
-  width: 31vw;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
@@ -273,14 +249,14 @@ body {
   width: fit-content;
   margin: 0 auto;
   font-family: "Cormorant Infant", serif;
-  font-size: 18vw;
+  font-size: 324px;
   font-weight: 300;
-  letter-spacing: -0.006em;
+  letter-spacing: -1.8vw;
   white-space: nowrap;
+  margin-bottom: -2vw;
 }
 .footer .huge span {
   display: inline-block;
-  margin-right: -70px;
   will-change: transform;
   transition: 0.3s;
 }
@@ -297,9 +273,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font: 400 normal clamp(10px, 1.25vw, 24px)/normal "Roobert";
-  padding: 0 0 44px;
-  margin: -2vw 0 0;
+  font-size: 24px;
+  font-weight: 400;
   z-index: 2;
   position: relative;
 }
@@ -570,7 +545,7 @@ body {
 .sc-intro .flex-inner .video .desc {
   text-align: center;
   text-indent: 0;
-  font-size: clamp(7px, 0.9vw, 16px);
+  font-size: clamp(14px, 0.9vw, 16px);
   padding-top: 15px;
   padding-left: 0;
   width: 100%;

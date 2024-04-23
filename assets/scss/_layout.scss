@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: clamp(13px, 1.25vw, 24px);
+    font-size: 24px;
     font-weight: 500;
     pointer-events: initial;
     transition: 0.2s;
@@ -52,36 +52,6 @@
   }
 }
 
-.gnb {
-  .menu-list a {
-    position: relative;
-    text-align: left;
-  }
-  .word1 {
-    .letter {
-      font-size: clamp(80px, 6.9444444444vw, 133.3333333333px);
-      line-height: 1.1;
-      margin-right: -6px;
-    }
-  }
-  .word2 {
-    position: absolute;
-    top: clamp(8px, 0.6944444444vw, 13.3333333333px);
-    left: 0;
-    transform: translateY(-20px);
-    font-family: "Orbikular Regular";
-    font-size: clamp(80px, 6.9444444444vw, 133.3333333333px);
-    font-style: italic;
-    line-height: 1.1;
-    color: #f0ff3d;
-    .letter {
-      opacity: 0;
-      transform: translateY(100%);
-      visibility: visible;
-    }
-  }
-}
-
 // 헤더 색상변경 토글
 .header .logo.invert svg path {
   fill: #002921;
@@ -109,15 +79,18 @@
 
 .footer {
   position: relative;
+  display: block;
   background: #f7f7f7;
   overflow: hidden;
   .inner {
-    width: 96vw;
     margin: 0 auto;
-    padding: 130px 0 0;
+    padding: 100px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
   .txt {
-    width: 31vw;
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
@@ -157,13 +130,13 @@
     width: fit-content;
     margin: 0 auto;
     font-family: "Cormorant Infant", serif;
-    font-size: 18vw;
+    font-size: 324px;
     font-weight: 300;
-    letter-spacing: -0.006em;
+    letter-spacing: -1.8vw;
     white-space: nowrap;
+    margin-bottom: -2vw;
     span {
       display: inline-block;
-      margin-right: -70px;
       will-change: transform;
       transition: 0.3s;
     }
@@ -181,9 +154,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font: 400 normal clamp(10px, 1.25vw, 24px) / normal "Roobert";
-    padding: 0 0 44px;
-    margin: -2vw 0 0;
+    font-size: 24px;
+    font-weight: 400;
     z-index: 2;
     position: relative;
     .flex {
